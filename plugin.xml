@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-fixwindowsize" version="1">
+   <name>fixwindowsize</name>
+   <js-module src="www/fixwindowsize.js" name="fixwindowsize">
+      <clobbers target="cordova.plugins.fixwindowsize"/>
+   </js-module>
+   <platform name="windows">
+      <js-module name="fixwindowsizeProxy" src="src/windows/fixwindowsize.js">
+         <runs target="" />
+      </js-module>
+   </platform>
+</plugin>
