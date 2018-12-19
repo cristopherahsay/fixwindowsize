@@ -4,11 +4,11 @@ cordova.commandProxy.add("windowResize",{
             var ViewManagement = Windows.UI.ViewManagement;
             var ApplicationView = ViewManagement.ApplicationView;
             var view = ApplicationView.getForCurrentView();
-            view.tryResizeView({ width: 1024, height: 600 });
+            view.tryResizeView({ width: 1024, height: 768 });
 
             window.addEventListener("resize", function(){
-                if(view.visibleBounds.width < 1024 || view.visibleBounds.height < 600){
-                    view.tryResizeView({ width: 1024, height: 600 });
+                if(view.visibleBounds.width < 1024 || view.visibleBounds.height < 768){
+                    view.tryResizeView({ width: 1024, height: 768 });
                 }
             });
             
