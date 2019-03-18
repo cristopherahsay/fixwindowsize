@@ -9,6 +9,8 @@ cordova.commandProxy.add("windowResize",{
             window.addEventListener("resize", function(){
                 if(view.visibleBounds.width < 1024 || view.visibleBounds.height < 768){
                     view.tryResizeView({ width: 1024, height: 768 });
+                } else {
+                    successCallback();
                 }
             });
             
